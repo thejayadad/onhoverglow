@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: monospace;
+            color: white;
+            background: black;
+        }
+
+        h2 {
+            font-size: 3em;
+            font-weight: 300;
+        }
+        h2 span {
+            transition: .5s;
+        }
+        h2:hover span:nth-child(1){
+            margin-left: 15px;
+        }
+        h2:hover span:nth-child(2){
+            margin-right: 50px;
+        }
+
+        h2:hover span {
+            color: #fff;
+            text-shadow: 0 0 10px rgb(225, 14, 18),
+            0 0 20px rgb(225, 14, 18),
+            0 0 40px rgb(225, 14, 18),
+            0 0 80px rgb(225, 14, 18),
+            0 0 120px rgb(225, 14, 18),
+            0 0 160px rgb(225, 14, 18);
+        }
+    </style>
+</head>
+<body>
+    <h2><span>Hover</span>Shadow<span>Effect</span></h2>
+</body>
+</html>
